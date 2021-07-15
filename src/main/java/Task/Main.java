@@ -65,10 +65,16 @@ public class Main {
         task4.put(ASSIGNEE_ID, "007");
         task4.put(TASK_STATE, DISABLE_STATE);
 
+        HashMap<String, String> task5 = new HashMap<>();
+        task5.put(TASK_ID, "5");
+        task5.put(ASSIGNEE_ID, "");
+        task5.put(TASK_STATE, ACTIVE_STATE);
+
         tasks.add(task1);
         tasks.add(task2);
         tasks.add(task3);
         tasks.add(task4);
+        tasks.add(task5);
 
         System.out.println(getCountUniqueAssignees(tasks));
 
