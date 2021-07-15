@@ -16,7 +16,7 @@ public class Main {
     private final static String WRONG_TASK_FORMAT_EXCEPTION_MESSAGE = "Не правильный формат задачи";
 
 
-    private static int getCount(ArrayList<HashMap<String, String>> tasks) {
+    private static int getCountUniqueAssignees(ArrayList<HashMap<String, String>> tasks) {
         int count = 0;
         ArrayList<String> assignee_ids = new ArrayList<>();
 
@@ -70,7 +70,7 @@ public class Main {
         tasks.add(task3);
         tasks.add(task4);
 
-        System.out.println(getCount(tasks));
+        System.out.println(getCountUniqueAssignees(tasks));
 
     }
 
