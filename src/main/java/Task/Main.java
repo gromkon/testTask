@@ -27,7 +27,7 @@ public class Main {
             String task_state = task.get(TASK_STATE);
             if (task_state.equals(ACTIVE_STATE)) {
                 String assignee_id = task.get(ASSIGNEE_ID);
-                if (!assignee_ids.contains(assignee_id)) {
+                if (assignee_id.length() > 0 && !assignee_ids.contains(assignee_id)) {
                     count++;
                     assignee_ids.add(assignee_id);
                 }
